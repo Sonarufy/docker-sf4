@@ -18,3 +18,6 @@ cli: ## Access docker cli
 sf: ## Access symfony cli
 	$(DOCKER_COMPOSE) exec php-fpm $(PROJECT_NAME)/bin/console
 
+mysql: ## Access mysql cli
+	$(DOCKER_COMPOSE) exec mysql mysql -uroot -pdbrootpw
+
